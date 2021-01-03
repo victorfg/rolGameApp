@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import {
-  createAppContainer,
-  createSwitchNavigator
-} from 'react-navigation'
-
-import SigninScreen from './src/screens/SigninScreen';
-import SignupScreen from './src/screens/SignupScreen';
+import Login from './components/Login';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola Buti, sóc l'emulador d'Android!</Text>
-      <StatusBar style="auto" />
+      <Login />
     </View>
   );
 }
